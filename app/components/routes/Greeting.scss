@@ -1,0 +1,27 @@
+$bg-img: url("../../assets/images/heart.jpg");
+
+.greeting-panel {
+  background-image: $bg-img;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .left-panel {
+    flex: 2;
+  }
+
+  .right-panel {
+    flex: 2;
+
+    .nested-img {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+
+  
+}
