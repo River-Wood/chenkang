@@ -5,6 +5,9 @@ import "./slick.scss";
 import "./slick-theme.scss";
 import "./slick-style.scss";
 
+import RightArrow from "./RightArrow";
+import LeftArrow from "./LeftArrow";
+
 import img1 from "../../assets/images/wechat/1.jpg";
 import img2 from "../../assets/images/wechat/2.jpg";
 import img3 from "../../assets/images/wechat/3.jpg";
@@ -40,6 +43,10 @@ export default class CustomSlider extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      nextArrow: <RightArrow />,
+      prevArrow: <LeftArrow />,
       afterChange: function(index) {
         console.log(`index is${index}`);
         if (index === 19) {

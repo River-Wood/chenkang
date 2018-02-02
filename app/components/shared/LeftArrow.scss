@@ -1,0 +1,15 @@
+$prev-img: url("../../assets/images/prev.png");
+
+.prev {
+  position: absolute;
+  top: 242px;
+  left: 49px;
+  display: block;
+  width: 61px;
+  height: 70px;
+  background: $prev-img 0 0 no-repeat;
+  z-index: 99;
+}
+.prev:hover {
+  background-position: 0 bottom;
+}
