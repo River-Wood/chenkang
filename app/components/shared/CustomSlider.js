@@ -49,81 +49,85 @@ export default class CustomSlider extends React.Component {
       prevArrow: <LeftArrow />,
       afterChange: function(index) {
         console.log(`index is${index}`);
-        if (index === 19) {
-          if (window.confirm("Do you really want to leave?")) {
-            // window.open("exit.html", "Thanks for Visiting!");
-            console.log("next page");
-            this.props.history.push('/ending');
-          } else {
-            console.log("go back");
-          }
-        }
+        // if (index === 19) {
+        //   if (window.confirm("Do you really want to leave?")) {
+        //     // window.open("exit.html", "Thanks for Visiting!");
+        //     console.log("next page");
+        //     this.props.history.push('/ending');
+        //   } else {
+        //     console.log("go back");
+        //   }
+        // }
       }.bind(this)
     };
+
+    let style = this.props.customStyle || {};
     return (
-      <div className="content">
+      <div className="content" style={style}>
         <Slider {...settings}>
           <div>
-            <img src={img1} style={{ width: "30%" }} />
+            <img src={img1} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img2} style={{ width: "30%" }} />
+            <img src={img2} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img3} style={{ width: "30%" }} />
+            <img src={img3} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img4} style={{ width: "30%" }} />
+            <img src={img4} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img5} style={{ width: "30%" }} />
+            <img src={img5} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img6} style={{ width: "30%" }} />
+            <img src={img6} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img7} style={{ width: "30%" }} />
+            <img src={img7} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img8} style={{ width: "30%" }} />
+            <img src={img8} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img9} style={{ width: "30%" }} />
+            <img src={img9} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img10} style={{ width: "30%" }} />
+            <img src={img10} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img11} style={{ width: "30%" }} />
+            <img src={img11} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img12} style={{ width: "30%" }} />
+            <img src={img12} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img13} style={{ width: "30%" }} />
+            <img src={img13} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img14} style={{ width: "30%" }} />
+            <img src={img14} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img15} style={{ width: "30%" }} />
+            <img src={img15} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img16} style={{ width: "30%" }} />
+            <img src={img16} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img17} style={{ width: "30%" }} />
+            <img src={img17} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img18} style={{ width: "30%" }} />
+            <img src={img18} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img19} style={{ width: "30%" }} />
+            <img src={img19} style={{ width: "20%" }} />
           </div>
           <div>
-            <img src={img20} style={{ width: "30%" }} />
+            <img src={img20} style={{ width: "20%" }} />
           </div>
         </Slider>
+
+        <h1><a href = "http://t.cn/R8XjZhj" style= {{textDecoration:"none"}}>不要点击我 (´・ω・｀)</a></h1>
       </div>
     );
   }

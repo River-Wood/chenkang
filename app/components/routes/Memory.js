@@ -14,11 +14,7 @@ const FULL_MESSAGE =
   "当  你说，无论怎么样你都喜欢我的时候，我真的发现自己很幸福。不是因为你那么爱我，而是我那么爱你。我不能删除爱的记忆体，是因为和你爱得太美丽。别 怀疑我为什么爱你，就像云恋着风风恋着雨，其实我也不太懂这是什么道理。我想这就好像呼吸，不用练习。";
 
 const DIALOGS = [
-  " 1.1和子琪一起看鬼片，招魂一点都不恐怖，不过子琪看到恐怖镜头就侧身过去",
-  " 1.2我们坐一起商量meta分析的方法，我感觉我们的关系好像进了一步，哪怕是微小的一步",
-  " 1.5我做网页遇到了困难，心情低到了极点，谢谢你给我鼓励，我一定会完成这个网页，给你一个很棒的礼物",
-  " 1.7号，我不小心把你照片删掉了，但是你发了自己的照片给我，还称呼我为我家康康，恩，我希望我永远都是你家的，顿时幸福的要死，子琪我好爱你",
-  "1.9号，我们在一起待了一天，那是我第一次同你一起吃早饭，我在你楼下等了一会，外面很冷，但我的内心却很开心，我好希望能够每天都能够在你楼下等你(阿哩，我喜欢受虐吗)才怪"
+  " ",
 ];
 
 class Memory extends React.Component {
@@ -173,6 +169,11 @@ class Memory extends React.Component {
             </div>
           )}
         </Animate>
+
+        <CustomSlider history={this.props.history} customStyle = {this.state.showSlider ? {
+          position : "fixed",
+          top : "0"
+        } : {}}/>
         <div>
           <img className="img1 move" src={naruto} />
         </div>
@@ -207,14 +208,16 @@ class Memory extends React.Component {
 
     const slider = <CustomSlider history={this.props.history} />;
     return (
-      <TransitionGroup>
-        {(() => {
-          if (!this.state.showSlider) {
-            return <FadeTransition duration={1000} key="_memories">{memories}</FadeTransition>;
-          }
-          return <FadeTransition duration={2500} key="_slider">{slider}</FadeTransition>;
-        })()}
-      </TransitionGroup>
+      // <TransitionGroup>
+      //   {(() => {
+      //     if (!this.state.showSlider) {
+      //       return <FadeTransition duration={1000} key="_memories">{memories}</FadeTransition>;
+      //     }
+      //     return <FadeTransition duration={2500} key="_slider">{slider}</FadeTransition>;
+      //   })()}
+      // </TransitionGroup>
+
+      memories
     );
   }
 }
