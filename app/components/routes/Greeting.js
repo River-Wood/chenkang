@@ -27,7 +27,7 @@ class Greeting extends React.Component {
       "可是我们是不同次元的人",
       "不要伤心,我知道你所在的世界里有一个同样爱你的人",
       "他告诉了我登陆的账号和密码,不信你去看看",
-      "账号是:子琪,密码是陈康"
+      "账号是:子琪,密码是chenkang"
     ];
     this.addCard = this.addCard.bind(this);
   }

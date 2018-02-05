@@ -9,8 +9,7 @@ const Root = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/greeting" component={Greeting} />
+        <Route exact path="/" component={Greeting} />
         <Route path="/memory" component={Memory} />
         <Route path="/ending" component={Ending} />
       </Switch>
