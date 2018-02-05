@@ -12,14 +12,14 @@ function Card({ children, isForm = false, history }) {
                     </p>
                   </main>;
 
-  const formCard = <main className="container">
-                    <h2>Sign In</h2>
-                    <div className="detail">
-                      <Form history={ history }/>
-                    </div>
-                  </main>;
-  const card = !isForm ? infoCard : formCard;
-  return card;
+  // const formCard = <main className="container">
+  //                   <h2>Sign In</h2>
+  //                   <div className="detail">
+  //                     <Form history={ history }/>
+  //                   </div>
+  //                 </main>;
+  // const card = !isForm ? infoCard : formCard;
+  return infoCard;
 }
 
 export default Card;

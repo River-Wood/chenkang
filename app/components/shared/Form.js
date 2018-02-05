@@ -2,13 +2,13 @@ import React from "react";
 import "./Form.scss"
 
 const CORRECT_USER = "子琪";
-const CORRECT_PWD = "陈康";
+const CORRECT_PWD = "chenkang";
 
 class Form extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            hint : "hey",
+            hint : "需要登录呀ヽ(✿ﾟ▽ﾟ)ノ",
             user : "",
             pwd : "",
         }
@@ -46,7 +46,7 @@ class Form extends React.Component {
         return <form id="form" className="topBefore" onSubmit={this.handleSubmit}>
             <h1>{this.state.hint}</h1>
                     <input id="name"  type="text" placeholder="NAME" onChange={this.handleNameChange}/>
-                    <input id="email" type="text" placeholder="PASSWORD" onChange={this.handlePwdChange}/>
+                    <input id="email" type="PASSWORD" placeholder="PASSWORD" onChange={this.handlePwdChange}/>
                     <input id="submit" type="submit" value="GO!" />
                 </form>;
     }

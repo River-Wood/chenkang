@@ -9,6 +9,7 @@ import CustomSlider from "../shared/CustomSlider";
 import FadeTransition from "../shared/animations/FadeTransition";
 
 import "./Memory.scss";
+import bgm from "../../assets/audio/汪苏泷-幸福是被你需要.mp3";
 
 const FULL_MESSAGE =
   "当  你说，无论怎么样你都喜欢我的时候，我真的发现自己很幸福。不是因为你那么爱我，而是我那么爱你。我不能删除爱的记忆体，是因为和你爱得太美丽。别 怀疑我为什么爱你，就像云恋着风风恋着雨，其实我也不太懂这是什么道理。我想这就好像呼吸，不用练习。";
@@ -203,6 +204,7 @@ class Memory extends React.Component {
           <img className="Rose17 runTopRoseDlayB" src={rose} />
           <img className="Rose18 runTopRoseDlayB" src={rose} />
         </div>
+				<audio src={bgm} autoplay="autoplay" loop="true" />
       </div>
     );
 
