@@ -1,5 +1,16 @@
 $bg-img: url("../../assets/images/heart.jpg");
 
+@font-face {
+  font-family: "迷你简启体";
+  src: url("../../assets/fonts/迷你简启体.ttf");
+}
+
+
+@font-face {
+  font-family: "方正喵呜体";
+  src: url("../../assets/fonts/方正喵呜体.ttf");
+}
+
 .memory-panel {
   background-image: $bg-img;
   background-size: 100% 100%;
